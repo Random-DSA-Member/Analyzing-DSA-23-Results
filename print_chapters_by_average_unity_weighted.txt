@@ -1,0 +1,60 @@
+San Francisco | Unity: 96.63 with 17 Delegates
+Louisville | Unity: 96.00 with 6 Delegates
+Salt Lake | Unity: 93.94 with 5 Delegates
+North Texas | Unity: 90.34 with 10 Delegates
+Orlando | Unity: 88.96 with 7 Delegates
+Metro DC | Unity: 87.99 with 42 Delegates
+Central New Jersey | Unity: 86.32 with 5 Delegates
+Rhode Island | Unity: 86.26 with 6 Delegates
+Middle Tennessee | Unity: 86.21 with 5 Delegates
+Los Angeles | Unity: 85.37 with 62 Delegates
+Buffalo | Unity: 84.72 with 6 Delegates
+Las Vegas | Unity: 83.87 with 8 Delegates
+Atlanta | Unity: 83.33 with 17 Delegates
+Houston | Unity: 82.37 with 12 Delegates
+Charlotte Metro | Unity: 82.22 with 5 Delegates
+Connecticut | Unity: 81.88 with 12 Delegates
+Silicon Valley | Unity: 79.55 with 6 Delegates
+Maine | Unity: 78.81 with 8 Delegates
+Cleveland | Unity: 78.43 with 8 Delegates
+Miami | Unity: 77.78 with 5 Delegates
+Austin | Unity: 76.60 with 20 Delegates
+Chicago | Unity: 75.51 with 42 Delegates
+Milwaukee | Unity: 75.00 with 8 Delegates
+Sacramento | Unity: 74.66 with 8 Delegates
+North New Jersey | Unity: 74.66 with 11 Delegates
+Inland Empire | Unity: 73.00 with 7 Delegates
+River Valley | Unity: 72.66 with 6 Delegates
+Orange County | Unity: 71.88 with 5 Delegates
+West Suburban Illinois | Unity: 71.57 with 8 Delegates
+Capital District | Unity: 71.43 with 6 Delegates
+Charlottesville | Unity: 71.19 with 5 Delegates
+San Antonio | Unity: 69.77 with 7 Delegates
+New Orleans | Unity: 68.97 with 7 Delegates
+Boulder | Unity: 68.33 with 5 Delegates
+Rochester | Unity: 68.12 with 5 Delegates
+St. Louis | Unity: 67.96 with 8 Delegates
+Pittsburgh | Unity: 67.86 with 10 Delegates
+Mid-Hudson Valley | Unity: 67.82 with 6 Delegates
+Phoenix | Unity: 67.00 with 8 Delegates
+Seattle | Unity: 66.42 with 26 Delegates
+Huron Valley | Unity: 64.89 with 6 Delegates
+Portland | Unity: 64.87 with 29 Delegates
+Central Indiana | Unity: 64.50 with 7 Delegates
+Columbus | Unity: 63.16 with 9 Delegates
+Madison Area | Unity: 62.24 with 5 Delegates
+Kansas City | Unity: 62.20 with 6 Delegates
+Greater Baltimore | Unity: 61.67 with 5 Delegates
+Denver | Unity: 61.58 with 16 Delegates
+Boston | Unity: 57.58 with 30 Delegates
+New York City | Unity: 56.73 with 106 Delegates
+Triangle | Unity: 55.64 with 10 Delegates
+Twin Cities | Unity: 53.11 with 24 Delegates
+Metro Detroit | Unity: 52.69 with 13 Delegates
+Metro Cincinnati & Northern Kentucky | Unity: 52.48 with 8 Delegates
+Lower Hudson Valley | Unity: 51.88 with 6 Delegates
+East Bay | Unity: 49.19 with 29 Delegates
+San Diego | Unity: 48.39 with 10 Delegates
+Philadelphia | Unity: 48.10 with 22 Delegates
+EVERYONE | Unity: 43.94 with 1057 Delegates
+At Large | Unity: 43.63 with 43 Delegates

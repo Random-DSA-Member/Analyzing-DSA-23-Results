@@ -33,6 +33,9 @@ class VoteResult:
 
     def any_votes(self):
         return self.result[YES]+self.result[NO] > 0
+
+    def num_valid_votes(self):
+        return self.result[YES]+self.result[NO]
         
     def percentage(self):
         yes_votes = self.result[YES]
@@ -67,22 +70,31 @@ class VoteResultMap:
                 return True
         return False
 
-    def average_unity(self):
+    # weighted=True -> Take weighted average of unity scores
+    #                  by the number of people who voted yes/no
+    #                  (i.e. votes where more people abstained count for less)
+    def average_unity(self, weighted=False):
         sum_unity_scores = 0
         num_valid_votes = 0
         for filename in self.filenames:
             if self.vote_map[filename].any_votes():
-                sum_unity_scores += self.vote_map[filename].unity()
-                num_valid_votes += 1
+                if weighted:
+                    sum_unity_scores += \
+                        self.vote_map[filename].num_valid_votes() * \
+                        self.vote_map[filename].unity()
+                    num_valid_votes += self.vote_map[filename].num_valid_votes()
+                else:
+                    sum_unity_scores += self.vote_map[filename].unity()
+                    num_valid_votes += 1
         if num_valid_votes == 0:
             return 0
         return sum_unity_scores / num_valid_votes
 
-    def __str__(self):
+    def __str__(self, weighted=False):
         lines = []
         for filename in self.filenames:
             lines.append(f"{filename}: {self.vote_map[filename]}")
-        lines.append(f"Average Unity Score: {self.average_unity():.2f}")
+        lines.append(f"Average Unity Score: {self.average_unity(weighted):.2f}")
         return "\n".join(lines)
     
 class AllVoteData:
@@ -133,11 +145,11 @@ class AllVoteData:
         chapter_result_map["EVERYONE"] = self.get_all_results()
         return chapter_result_map
 
-    def print_chapters_by_average_unity(self, min_delegates=0):
+    def print_chapters_by_average_unity(self, min_delegates=0, weighted=False):
         all_results = self.get_all_chapter_results_for_all_chapters()
         unity_chapter_pairs = []
         for chapter in all_results:
-            unity_chapter_pairs.append((chapter, all_results[chapter].average_unity()))
+            unity_chapter_pairs.append((chapter, all_results[chapter].average_unity(weighted)))
         unity_chapter_pairs.sort(key=lambda pr: pr[1], reverse=True)
         for chapter, unity in unity_chapter_pairs:
             num_delegates = all_results[chapter].num_delegates()
@@ -166,6 +178,11 @@ def gendata():
     return AllVoteData(all_data)
 
 if __name__ == "__main__":
+    # Analyze the unity of votes across DSA's entire delegation:
+    # print(gendata().get_all_results())
+    
     # Analyze the votes from a specific chapter:
-    # print(gendata().get_all_chapter_results("San Francisco"))
+    # print(gendata().get_all_chapter_results("Metro DC"))
+    
     gendata().print_chapters_by_average_unity(min_delegates=5)
+    # gendata().print_chapters_by_average_unity(min_delegates=5, weighted=True)
