@@ -1,0 +1,7 @@
+# Analyzing DSA Convention 2023 Voting Results
+
+A simple Python script for analyzing the voting results from DSA Convention 2023! Right now, it just computes a "unity score" for every chapter based on how unified their delegates' votes were and then prints the unity score of all chapters with at least 5 members. But more features will be added soon!
+
+The unity score for a chapter on a single vote is computed as `2*abs(p-50)`, where `p` is the percentage of members who voted yes (out of all members who voted either yes or no). The intuition here is that 0% of a chapter voting yes or 100% of a chapter voting yes means the chapter is completely unified, so they get unity score 100, whereas 50% of a chapter voting yes means the chapter is completely split in half, so they get unity score 0. Then, the unity score for a chapter is just the average of the unity score of the chapter over all the votes.
+
+To run the script, first download the `processed.zip` file from the post on the DSA Discussion Forum titled "2023 Convention Voting Records from Open Slides". Then, unzip that file, which will result in a directory called `processed`. Make sure the `main.py` script from this repository is in the same directory as the `processed` directory (i.e. this script should not be inside the `processed` directory, but both the `processed` directory and `main.py` should be in the same parent directory). Then run the `main.py` script by running `python3 main.py` in the terminal! This script was developed and tested using Python 3.8.10.
